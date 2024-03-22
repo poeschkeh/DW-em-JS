@@ -1,5 +1,5 @@
 ## Escopo
-Escopó em JavaScript é referente a como a variável pode ser usada ou declarada.
+Escopo em JavaScript é referente a como a variável pode ser usada ou declarada.
 
 Para ser usada ou declarada, o escopo de uma variável depende do local onde ela foi declarad e da palavra-chave que foi utilizada (var, let, const).
 
