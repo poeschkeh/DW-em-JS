@@ -2,7 +2,7 @@
  * Seleção dos elementos HTML
  ****************************************************************/
 // Botões
-const btnBotoes = document.querySelectorAll("[btn-numero]"); //um array de elementos botões(numeros) no HTML//
+const btnBotoes = document.querySelectorAll("[btn-numero]"); //UM ARRAY DE ELEMENTOS BOTÕES(NUMEROS) NO HTML//
 const btnOperacoes = document.querySelectorAll("[btn-operador]");
 const btnIgual = document.querySelector("[btn-igual]");
 const btnDelete = document.querySelector("[btn-delete]");
@@ -13,24 +13,24 @@ const bufferElemento = document.querySelector("[txt-buffer]");
 const displayElemento = document.querySelector("[txt-display]");
 
 // Objeto que irá representar e armazenar os dados da calculadora
-const calculadora = {  //Pega o operadorAnterior e o operadorAtual e executa os dois juntos, exibindo o resultado//
-  operandoAnterior: "",  //Determina o(s) primeiro(s) número(s) a ser calculado//
-  operandoAtual: "",  //Determina o(s) próximo(s) número(s) a ser calculado//
-  operador: "",  //Determina qual operação deve ser executada//
-  bufferTextoElemento: bufferElemento, // DIV buffer //É o elemento que vai capturar o operandoAnterior//
-  displayTextoElemento: displayElemento, // DIV display  //É o elemento que vai capturar o operandoAtual//
-  //Esses dois elementos acima foram definidos no HTML//
+const calculadora = {  //PEGA O OPERANDOANTERIOR E O OPERANDOATUAL E EXECUTA OS DOIS JUNTOS, EXIBINDO O RESULTADO//
+  operandoAnterior: "",  //DETERMINA O(S) PRIMEIRO(S) NÚMERO(S) A SER CALCULADO//
+  operandoAtual: "",  //DETERMINA O(S) PRÓXIMO(S) NÚMERO(S) A SER CALCULADO//
+  operador: "",  //DETERMINA QUAL OPERAÇÃO DEVE SER EXECUTADA//
+  bufferTextoElemento: bufferElemento, // DIV buffer //É O ELEMENTO QUE VAI CAPTURAR O OPERANDOANTERIOR//
+  displayTextoElemento: displayElemento, // DIV display  //É O ELEMENTO QUE VAI CAPTURAR O OPERANDOATUAL//
+  //ESSES DOIS ELEMENTOS ACIMA FORAM DEFINIDOS NO HTML//
 };
 
 /****************************************************************
  * Associar funções aos eventos dos elementos HTML
  ****************************************************************/
-// Botão AC   //Determina o que o botão AC faz//
+// Botão AC   //DETERMINA O QUE O BOTÃO AC FAZ//
 btnAC.addEventListener("click", () => {
   limpaVariaveis(calculadora);
 });
 
-// Botão Delete   //Determina o que o botão Delete faz//
+// Botão Delete   //DETERMINA O QUE O BOTÃO DELETE FAZ//
 btnDelete.addEventListener("click", () => {
   apagaDigito(calculadora);
 });
@@ -47,7 +47,7 @@ btnIgual.addEventListener("click", () => {
 //    });    
 //}
 
-//***Esse for é uma outra forma de obter o mesmo resultado do for de cima***//
+//***ESSE FOR É UMA OUTRA FORMA DE OBTER O MESMO RESULTADO DO FOR DE CIMA***//
 for (let btn of btnBotoes) {
   btn.addEventListener("click", () => {
     adicionaNumero(calculadora, btn.innerText);
