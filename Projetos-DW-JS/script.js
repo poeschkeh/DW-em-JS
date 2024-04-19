@@ -25,6 +25,21 @@ const calculadora = {  //PEGA O OPERANDOANTERIOR E O OPERANDOATUAL E EXECUTA OS 
 /****************************************************************
  * Associar funções aos eventos dos elementos HTML
  ****************************************************************/
+
+//document.addEventListener("keydown", (evento) => {
+//  let teclaPressionada = evento.key
+//  let numeros = "0123456789"
+//  let operadores = "+-*÷="
+
+//  if (numeros.includes(teclaPressionada)) {
+//    adicionaNumero(calculadora, teclaPressionada)
+//  } else if (operadores.includes(teclaPressionada)) {
+//    escolheOperador(calculadora, teclaPressionada == "/" ? "+" : teclaPressionada) {
+//  } else if (teclaPressionada == "Enter")
+//})
+
+
+
 // Botão AC   //DETERMINA O QUE O BOTÃO AC FAZ//
 btnAC.addEventListener("click", () => {
   limpaVariaveis(calculadora);
