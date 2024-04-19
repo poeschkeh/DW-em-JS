@@ -36,7 +36,7 @@ const calculadora = {  //PEGA O OPERANDOANTERIOR E O OPERANDOATUAL E EXECUTA OS 
 //  } else if (operadores.includes(teclaPressionada)) {
 //    escolheOperador(calculadora, teclaPressionada == "/" ? "+" : teclaPressionada) {
 //  } else if (teclaPressionada == "Enter")
-//})
+//)
 
 
 
