@@ -1,9 +1,23 @@
-const inputText = document.querySelector("(input-texto)")
-const btnContar = document.querySelector("(btn-contar)")
-const divContador = document.querySelector("(text-contador)")
+const inputTexto = document.querySelector("[input-texto]")
+const btnContar = document.querySelector("[btn-contar]")
+const divContador = document.querySelector("[text-contador]")
 
-function saudacao(){
-    console.log("Olá")
+let tipoContagem = "caracteres"
+
+function handleBtnContar(evento){
+    if (tipoContagem == "caracteres") {
+        evento.target.innerText = "Contar Palavras"
+        tipoContagem = "palavras"
+    } else{
+        evento.target.innerText = "Contar Caracteres"
+        tipoContagem = "caracteres"
+    }
 }
 
-btnContar.addEventListener("click", saudacao)
+const handleInputTexto = (evento) => {
+    console.log(evento.target.value)
+}
+
+btnContar.addEventListener("click", handleBtnContar) //FUNÇÃO GENÉRICA PARA CLIQUE
+//BtnContar.onclick = handleBtnContar //FUNÇÃO ESPECÍFICA PARA CLIQUE
+inputTexto.addEventListener("input", handleInputTexto)
