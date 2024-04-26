@@ -5,12 +5,12 @@ const divContador = document.querySelector("[text-contador]")
 let tipoContagem = "caracteres" //ESSE LET ALTERA ENTRE CONTAGEM DE CARACTERES E DE PALAVRAS
 
 function handleBtnContar(evento){
-    if (tipoContagem == "caracteres") {
-        evento.target.innerText = "Contar Palavras"
-        tipoContagem = "palavras"
+    if (tipoContagem == "Caracteres") {
+        evento.target.innerText = "Contar Palavras";
+        tipoContagem = "Palavras";
     } else{
-        evento.target.innerText = "Contar Caracteres"
-        tipoContagem = "caracteres"
+        evento.target.innerText = "Contar Caracteres";
+        tipoContagem = "Caracteres";
     }
     handleInputTexto();//ATUALIZA A EXIBIÇÃO DO CONTADOR 
 }
