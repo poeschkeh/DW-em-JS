@@ -1,6 +1,6 @@
 const inputTexto = document.querySelector("[input-texto]")
 const btnContar = document.querySelector("[btn-contar]")
-const divContador = document.querySelector("[text-contador]")
+const divContador = document.querySelector("[txt-contador]")
 
 let tipoContagem = "caracteres" //ESSE LET ALTERA ENTRE CONTAGEM DE CARACTERES E DE PALAVRAS
 
@@ -30,4 +30,4 @@ function handleInputTexto(){
 btnContar.addEventListener("click", handleBtnContar) //FUNÇÃO GENÉRICA PARA CLIQUE
 //BtnContar.onclick = handleBtnContar //FUNÇÃO ESPECÍFICA PARA CLIQUE
 inputTexto.addEventListener("input", handleInputTexto)
-handleInputTexto(); //ATUALIZA O CONTADOR
+//handleInputTexto(); //ATUALIZA O CONTADOR
