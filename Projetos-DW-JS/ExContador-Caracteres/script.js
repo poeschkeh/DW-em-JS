@@ -15,7 +15,7 @@ function handleBtnContar(evento){
     handleInputTexto();//ATUALIZA A EXIBIÇÃO DO CONTADOR 
 }
 
-function handleInputTexto(evento){
+function handleInputTexto(){
     //console.log(evento.target.value)
     const texto = inputTexto.value //TEXTO ARMAZENA O VALOR ATUAL DO ELEMENTO INPUTTEXTO.VALUE E RETORNA O VALOR ATUAL DO INPUT DO TEXTO
     if(tipoContagem == "Caracteres"){
