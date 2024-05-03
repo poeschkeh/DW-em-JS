@@ -25,16 +25,24 @@ body{
 .gerador{
     display: flex;
     justify-content: center;
+    margin: 15px;
 }
 
 h1{
     font-size: 1.8rem;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 
 img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: green;
+    color: white;
 }
 
 .container-botoes{
@@ -43,3 +51,9 @@ img{
     gap: 5px;
 }
 
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+    flex-grow: 2;
+}
