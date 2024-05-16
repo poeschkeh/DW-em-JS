@@ -20,17 +20,20 @@ body{
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .gerador{
     display: flex;
     justify-content: center;
-    margin: 15px;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 h1{
     font-size: 1.8rem;
-    /*margin-right: 10px;*/
+    margin-right: 10px;
 }
 
 img{
@@ -38,22 +41,44 @@ img{
     height: 50px;
 }
 
-button{
+input{
     border-radius: 5px;
     padding: 10px;
-    background-color: green;
-    color: white;
+    flex-grow: 2;
+    color: #333;
+    border: 1px solid #ccccccb0;
+    font-size: 1rem;
 }
 
 .container-botoes{
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-
-input{
+button{
     border-radius: 5px;
-    padding: 5px;
-    flex-grow: 2;
+    border: none;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button i.material-icons {
+    font-size: 1.5rem;
+}
+
+#resultLink {
+    margin-top: 20px;
+    user-select: none; /*Para desabilitar a seleção de texto*/
+}
+
+.transferencia{
+    margin-top: 10px;
+    color: gray;
 }
