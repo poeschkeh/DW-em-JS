@@ -20,6 +20,7 @@ telefone.addEventListener("input", (evento) => {
 telefone.addEventListener("focus", () => {
     mensagem.textContent = " "
     linkTexto.textContent = " "
+    linkTexto.classList.remove("bordaTelefone")
 })
 
 function handleBtnLink(){
@@ -28,8 +29,9 @@ function handleBtnLink(){
         const link = "https://wa.me/55" + telefoneFormatado;
         linkTexto.textContent = link;
         mensagem.textContent = "Clique no link para copiar";
-        linkTexto.style.border = "1px solid black";
-        linkTexto.style.borderRadius = "5px";
+        //linkTexto.style.border = "1px solid black";
+        //linkTexto.style.borderRadius = "5px";
+        linkTexto.classList.add("bordaTelefone") //Para remover o campo do link abaixo do campo "Telefone"
     } else {
         alert("Erro. O número deve conter 11 dígitos!")
     }

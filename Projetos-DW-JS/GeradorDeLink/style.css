@@ -43,6 +43,7 @@ input{
     border-radius: 5px;
     padding: 10px;
     flex-grow: 2;
+    border: 1px solid black;
 }
 
 .container-botoes{
@@ -71,4 +72,9 @@ button{
 #mensagem{
     margin-top: 7px;
     text-align: center;
+}
+
+.bordaTelefone{
+    border: 1px solid black;
+    border-radius: 5px;
 }
