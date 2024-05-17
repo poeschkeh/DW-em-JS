@@ -20,20 +20,18 @@ body{
     background-color: white;
     border-radius: 5px;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .gerador{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 15px;
 }
 
 h1{
-    font-size: 1.8rem;
-    margin-right: 10px;
+    font-size: 1.7rem;
+    margin-right: 5px;
+    margin-top: 8px;
 }
 
 img{
@@ -45,40 +43,32 @@ input{
     border-radius: 5px;
     padding: 10px;
     flex-grow: 2;
-    color: #333;
-    border: 1px solid #ccccccb0;
-    font-size: 1rem;
 }
 
 .container-botoes{
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 button{
     border-radius: 5px;
-    border: none;
     padding: 10px;
     background-color: green;
     color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-button i.material-icons {
-    font-size: 1.5rem;
+.telefoneValido{
+    color: green;
 }
 
-#resultLink {
-    margin-top: 20px;
-    user-select: none; /*Para desabilitar a seleção de texto*/
+#linkTexto{
+    margin: 5px;
+    padding: 2px;
+    user-select: none;
 }
 
-.transferencia{
-    margin-top: 10px;
-    color: gray;
+#mensagem{
+    margin-top: 7px;
+    text-align: center;
 }

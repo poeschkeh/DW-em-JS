@@ -7,7 +7,6 @@
     <title>Gerador de Link</title>
 
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -18,11 +17,14 @@
             <img src="./Icones/whatsapp.svg" alt="">
         </div>
         <div class="container-botoes">
-            <input type="text" id="input" placeholder="Telefone">
+            <input type="text" id="input" placeholder="Telefone" maxlength="15" class="">
             <button id="gerar-link-button"><i class="material-icons">link</i></button>
             <button id="copiar-link-button"><i class="material-icons">send</i></button>
         </div>
-        <div class="resultLink"></div>
+        <p id="linkTexto"></p>
+        <div id="mensagem"></div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
