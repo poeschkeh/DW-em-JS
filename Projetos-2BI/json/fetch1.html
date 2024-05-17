@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch 1</title>
 </head>
+
+<!--Variável "document" serve para pegar os elementos do HTML-->
+<!--".append" tem a ideia de inserir sempre na última posição-->
+    <!--".appendChild" tem a ideia de inserir um filho sempre na última posição-->
+
 <body>
     
     <script>
         function trataRespostaServidor(resposta){
-            
+
         }
 
         console.log("1")
-        fetch("info.txt").then(resposta => {
-            console.log("O servidor respondeu")
-        })
+        fetch("info.txt")
+            .then(resposta => resposta.text()) // OUTRA FORMA DE FAZER return resposta.text()
+            .then(texto => divContainer.innerHTML = texto)
+
+
         console.log("2")
         console.log("3") 
     </script>
