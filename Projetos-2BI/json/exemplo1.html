@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exemplo 1</title>
 </head>
 <body>
     
@@ -15,13 +15,17 @@
         }`
 
         let contato1 = {
-            nome: 'Joao',
+            nome: "Joao",
             telefone: 459382365
         }
         let contato2 = {
-            nome: 'Maria',
+            nome: "Maria",
             telefone:598742365
         }
+
+        contato1.nome = "Jose"
+        contato1.cpf = "128072"
+        contato1["cpf"] = "128072"
 
         console.log(json1)
         console.log(contato1)

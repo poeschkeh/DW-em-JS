@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    
+    <script>
+        //CONVERTENDO TEXTO(JSON) EM OBJETO
+        let texto = `{
+            "nome": "Maria", 
+            "telefone":44987594375
+        }`
+
+        let contato = JSON.parse(texto)
+        console.log(contato)
+    </script>
+</body>
+</html>
