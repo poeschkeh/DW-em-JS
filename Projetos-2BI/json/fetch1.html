@@ -8,8 +8,14 @@
 <body>
     
     <script>
+        function trataRespostaServidor(resposta){
+            
+        }
+
         console.log("1")
-        fetch("info.txt")
+        fetch("info.txt").then(resposta => {
+            console.log("O servidor respondeu")
+        })
         console.log("2")
         console.log("3") 
     </script>
