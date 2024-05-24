@@ -8,24 +8,26 @@
 <body>
     
     <script>
-        let json1 = '{"nome": "Joao", "telefone":44998574126}'
+        let json1 = '{"nome": "Joao", "telefone": 111111111}'
         let json2 = `{
             "nome": "Maria", 
-            "telefone":44987594375
+            "telefone": 222222222
         }`
 
         let contato1 = {
             nome: "Joao",
-            telefone: 459382365
+            telefone: 111111111
         }
         let contato2 = {
             nome: "Maria",
-            telefone:598742365
+            telefone: 222222222
         }
 
         contato1.nome = "Jose"
-        contato1.cpf = "128072"
-        contato1["cpf"] = "128072"
+        contato1.cpf = "000.000.000-00"
+        contato1["cpf"] = "000.000.000-00"
+
+        json1 = json1.replace("Joao","Jose")
 
         console.log(json1)
         console.log(contato1)

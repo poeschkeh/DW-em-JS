@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,14 @@
     <!--".appendChild" tem a ideia de inserir um filho sempre na última posição-->
 
 <body>
+
+    <div id="container"></div>
     
     <script>
-        function trataRespostaServidor(resposta){
-
-        }
+        let divContainer = document.querySelector('#container')
 
         console.log("1")
+
         fetch("info.txt")
             .then(resposta => resposta.text()) // OUTRA FORMA DE FAZER return resposta.text()
             .then(texto => divContainer.innerHTML = texto)
