@@ -69,6 +69,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 736px;
     transform: translateY(-50%);
 }
 
@@ -92,9 +93,9 @@ input{
     line-height: 140%;
 }
 
-.container{
+.container-maior{
     width: 736px;
-    height: 287px;
+    height: 451px;
     border-radius: 5px;  
     margin-top: 3rem;
 }
@@ -104,7 +105,7 @@ input{
     justify-content: space-between;
 }
 
-.tarefas{
+.tarefas-criadas{
     display: flex;
 }
 
@@ -120,7 +121,7 @@ input{
     color: var(--purple);
 }
 
-span{
+.span-5{
     display: flex;
     justify-content: center;
     width: 25px;
@@ -131,34 +132,39 @@ span{
     margin-left: 5px;
 }
 
-.cadastro{
-    height: 100%;
+.span{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 19px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.container{
+    width: 736px;
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.campos-container{
+    width: 100%;
+    height: 72px;
+    background-color: var(--gray-500);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
+
 }
 
-.clipboard{
-    width: 56px;
-    height: 56px;
-    margin-bottom: 16px;
-}
-
-hr{
-    color: var(--gray-300);
-}
-
-.sem-tarefas{
-    color: var(--gray-300);
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.crie-tarefas{
-    color: var(--gray-300);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+#tarefas{
+    display: flex;
+    color: var(--gray-100);
 }
