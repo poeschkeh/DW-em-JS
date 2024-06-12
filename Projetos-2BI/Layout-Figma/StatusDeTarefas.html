@@ -10,15 +10,15 @@
 
 <body>
     <header>
-        <img class="img-logo" src="./imagens/Logo.png" alt="">
+        <img class="img-logo" src="./imagens/Logo.png" alt="Logo">
     </header>
 
     <main>
         <div class="btn">
-            <input type="text" name="" id="input" placeholder="Adicione uma nova tarefa">
-            <button>
+            <input type="text" name="" id="novaTarefa" placeholder="Adicione uma nova tarefa">
+            <button id="btnCriar">
                 <p>Criar</p>
-                <img src="./imagens/plus.png" alt="" class="img-plus">
+                <img class="img-plus" src="./imagens/plus.png" alt="Adicionar">
             </button>
         </div>
 
@@ -26,16 +26,16 @@
             <div class="top">
                 <div class="tarefas">
                     <p class="azul">Tarefas Criadas</p>
-                    <span>0</span>
+                    <span id="taskCount">0</span>
                 </div>
                 <div class="concluidas">
                     <p class="roxo">Concluidas</p>
-                    <span>0</span>
+                    <span id="completedCount">0</span>
                 </div>
             </div>
             <hr>
             <div class="cadastro">
-                <img class="clipboard" src="imagens/Clipboard.png" alt="">
+                <img class="clipboard" src="imagens/Clipboard.png" alt="Clipboard">
                 <div>
                     <p class="sem-tarefas">Você ainda não tem tarefas cadastradas</p>
                     <p class="crie-tarefas">Crie Tarefas e organize seus itens a fazer</p>
@@ -43,5 +43,7 @@
             </div>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
