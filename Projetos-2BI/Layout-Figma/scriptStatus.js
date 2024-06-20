@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 completed: false
             };
             tasks.push(task);
-            taskInput.value = ''; // Limpa o campo de entrada
-            saveTasks(); // Salva a nova lista de tarefas no localStorage
-            renderTasks(); // Renderiza novamente as tarefas
+            taskInput.value = '';
+            saveTasks();
+            renderTasks();
         }
     });
 
     function renderTasks() {
-        taskContainer.innerHTML = ''; // Limpa o contêiner de tarefas
+        taskContainer.innerHTML = '';
 
-        if (tasks.length === 0) { // Quando não há tarefas
+        if (tasks.length === 0) {
             taskContainer.innerHTML = `
                 <img class="clipboard" src="imagens/Clipboard.png" alt="Clipboard">
                 <div>
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="crie-tarefas">Crie tarefas e organize seus itens a fazer</p>
                 </div>
             `;
-        } else { // Quando há tarefas
+        } else {
             const taskList = document.createElement('div');
             taskList.className = 'task-list';
             tasks.forEach((task, index) => {
@@ -45,33 +45,33 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="./imagens/lixeira.png" alt="" class="img-lixeira">
                     </button>
                 `;
-                taskList.appendChild(taskItem); // Adiciona a tarefa à lista
+                taskList.appendChild(taskItem);
             });
-            taskContainer.appendChild(taskList); // Adiciona a lista de tarefas ao contêiner
+            taskContainer.appendChild(taskList);
         }
 
-        taskCount.textContent = tasks.length; // Atualiza a contagem de tarefas
+        taskCount.textContent = tasks.length;
         const completedTasksCount = tasks.filter(task => task.completed).length;
-        completedCount.textContent = `${completedTasksCount} de ${tasks.length}`; // Atualiza a contagem de tarefas completas
+        completedCount.textContent = `${completedTasksCount} de ${tasks.length}`;
     }
 
     function saveTasks() {
-        localStorage.setItem('tasks', JSON.stringify(tasks)); // Salva a lista de tarefas no localStorage
+        localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 
     taskContainer.addEventListener('click', (e) => {
         if (e.target.tagName === 'BUTTON' || e.target.parentElement.tagName === 'BUTTON') {
             const index = e.target.dataset.index || e.target.parentElement.dataset.index;
-            tasks.splice(index, 1); // Remove a tarefa da lista
-            saveTasks(); // Salva a nova lista de tarefas no localStorage
-            renderTasks(); // Renderiza novamente as tarefas
+            tasks.splice(index, 1);
+            saveTasks();
+            renderTasks();
         } else if (e.target.type === 'checkbox') {
             const index = e.target.dataset.index;
-            tasks[index].completed = e.target.checked; // Marca a tarefa como completa/incompleta
-            saveTasks(); // Salva a nova lista de tarefas no localStorage
-            renderTasks(); // Renderiza novamente as tarefas
+            tasks[index].completed = e.target.checked;
+            saveTasks();
+            renderTasks();
         }
     });
 
-    renderTasks(); // Renderiza as tarefas ao carregar a página
+    renderTasks();
 });
