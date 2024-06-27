@@ -554,12 +554,86 @@ video {
   --tw-contain-style:  ;
 }
 
+.flex {
+  display: flex;
+}
+
 .h-screen {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-red-600 {
@@ -572,8 +646,128 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.to-blue-500 {
-  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+}
+
+.bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\"C\:\\Users\\Usu\E1rio\\Documents\\GitHub\\DW-em-JS\\Projetos-2BI\\tailwind-projeto\\src\\imagens-github\\fundo\.jpg\"\] {
+  background-color: "C:\Users\Usuário\Documents\GitHub\DW-em-JS\Projetos-2BI\tailwind-projeto\src\imagens-github\fundo.jpg";
+}
+
+.bg-\[\.\/\] {
+  background-color: ./;
+}
+
+.bg-\[url\(\'https\:\/\/example\.com\/your-image\.jpg\'\)\] {
+  background-image: url('https://example.com/your-image.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/example\.co\'\)\] {
+  background-image: url('https://example.co');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'https\:\/\/fundo\.jpg\'\)\] {
+  background-image: url('https://fundo.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/\.jpg\'\)\] {
+  background-image: url('https://.jpg');
+}
+
+.bg-\[url\(\'data\:image\/jpeg\;base64\2c \/9j\/4AAQSkZJRgABAQAAAQABAAD\/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys\/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N\/\/AABEIAJQA5AMBIgACEQEDEQH\/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAUH\/8QAHBABAQEBAQEBAQEAAAAAAAAAAAECERIDITET\/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgMAAQQFBv\/EAB0RAQADAQEBAAMAAAAAAAAAAAABAhEDEiEEEzH\/2gAMAwEAAhEDEQA\/APiUEGgT1MrYqGVM0Ew087Y6c6WxXJmr40VaG\/l0deKtiuXGl\/nSLQ6nG\+uvC2HNir4pFodbjZ05qkQzVJSZdLnZSCWUQHxIUmj0mlwC5KXRwsGzzCGojuOrUQ3kyssfajn1CeVtQvDYlhtRG5GQ9jSL0rx9aZHhpBDp1aEsT1F6jtdZB0r8c9\/rDr\+sawzH143G4LNrzeDDwkPAmVNKrnSMppQzB9LY6sadHz04saXxsm1XR4dXdjToxpw42vjbParr8eztxpWVyY2tnRFqupy6bDolPKjmnlLmGylvh7SU3SoKZ0rDYHFlzBdRLcWpNQUST0rrn1knF7CWGRLHaiOoX\+K6hLBRLPNQlHpaHV4H1h7Ud01qe6KsFdL\/ABO39ALf1jcYZs8puH8t5atcLzISCbhuK0cVTaU9yXiJkwbNVzviENKrDK3mHXjboxt5\+dLfPZVqN3Hvj0vnt0Y08\/5adXz0zXq7X4\/XXZmqZrnxV8s9odblbVILQYBrgONYYOKXMJ2FsVsLYKJKtVGwli1hbBRJF6IWE1FtRLRkMl4S0nfxTSW6bDD0kLU9UNUmqZEMd7hb\+snb\+sPGWbI\+Q4rxuGazfrSkMNgJqswKWw1CrgEwWwDUtEXMDFPmlFfmGR8\/66\/lXV8nJ83V82a7t\/jOz5ujDn\+ToyyWd\/h\/FIaFhi5bq\/wWAVDYOCyKwlieotYnqLiSr1Q0jt0aiO4bWWDrVz7Q26Nxz7h9XL7ajqp6qmolo\+HM6aTohf6w2fT9YnR6rBem0SnpNCgFgBmooKkKXQ0tWXIxX5pRb5hkfL\+ur5Or5uX5Ov5Mt3c\/Gh1fN0Zc2Fs1ms7nGcheGTzTylS31kwMHVCmR6JJTRFRIkpi1IS0p6R2tpLRkMfSEPpHPvLq2jqHVlze1Ncm8pay69RLcPrZzevNy2frHs\/WN1imiHRlS6PRYyxdXpNUvrhbpeJbp8HrdJ1uiwn0alb\+siDlfFQiuAyZznHX8nX83F8q6\/nfxmvDt\/jWdWarmufNUzWeYdbnd0SqTTmmz\+i5q2V6r\+i2pe29J5HPVWU0qMpvSsXHRS0mqX0W6SIVboNpK1pbRxDPa2lqelLSUcM1\/qWkdxfSOjasXWELP1jWfrHawzDzOt6T63WjHC9nug6XvRXivWsYpkFAwQYIxh8khpVSOsr\/AD06sbcOatjfCrVbuHXy78bUm3Fj6Kz6ETR0\+ff46psf9HN7b2HyfHd0\+xm3L7PnaTUVe\/11zY\+3NNt\/oDyfHd0XYekPbTSeVfu1b0FqfoLtflJ6mtLaW6L6XhNuhrUtGtT1R1gjpYlv6xbf0TWObQ8YYBpGx5thaCmCiWEBVg4kRKKh6IygysFEqSmmkpR6GYNi6\+dqT6OWaGaD5Nr2mHXPoP8Ao5PY\+wzQ2PyHVPopnbjmzzYZqbTu6\/Y\+nNNmmw\+T4766PQ\+nP7b2ryP9y92W7Ruy\+k8hns6Jro9Rzo3pXkUdFOk1S3RNaFFQX6Nb\+sldfrG4yT1jXBIMaDGlwtaC0HiJoCPBkVgosHG4ZrFYZFisPA4mC9MzcbisT2wdGgmLmzdb0AJie1Js80gaaVNR16rzR5pzzR5oE1aK9VvTekvRbpXkc9VbtvSHsZpfkv8Ad9dM0b055ofYfJ0dlbol0S6LdCiAX66frE6wsZ\/SIxmOc4YMZkhDSCzItpBZkFEgDMiwZmUuGZmRZaDMipBmZFD0eswTazI9oWsyDmZKaMySqDS\/gdZg4Y3RZlowsyAf\/9k\=\'\)\] {
+  background-image: url('data:image/jpeg;base64,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');
+}
+
+.bg-\[url\(\'\.\/imagens-github\'\)\] {
+  background-image: url('./imagens-github');
+}
+
+.bg-\[url\(\'\.\/imagens-github\/fundo\.jpg\'\)\] {
+  background-image: url('./imagens-github/fundo.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-3xl {
@@ -585,10 +779,36 @@ video {
   font-weight: 700;
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
-.bg-blend-color-burn {
-  background-blend-mode: color-burn;
+.placeholder\:text-black::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-black::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
